@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class ForExercise09 {
 
-	public void printPattern( char maxChar ) {
+	public static void printPattern( char maxChar ) {
 		
 		int numRows = maxChar - 'A' + 1 ;
 		int numCols = numRows * 2 - 1 ;
@@ -46,5 +46,11 @@ public class ForExercise09 {
 
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner( System.in );
+		System.out.print( "Enter a character: " );
+		char c = sc.next().charAt(0);
+		
+		ForExercise09.printPattern( c );
+		sc.close();
 	}
 }

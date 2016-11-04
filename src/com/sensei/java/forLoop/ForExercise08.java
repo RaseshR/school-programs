@@ -1,3 +1,11 @@
+/**
+Objective of the program: 
+
+To retrieve the top 'n' elements of an array given by the user in descending 
+order. This program uses bubble sort to sort first and then retrieves the top 
+'n' elements. There is a better implementation but I'm too lazy to do it :P
+ */
+
 package com.sensei.java.forLoop;
 
 import java.util.Scanner;

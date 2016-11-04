@@ -1,3 +1,9 @@
+/**
+Objective of the program: 
+
+To retrieve the highest and second highest number in an array of 'n' variables
+ */
+
 package com.sensei.java.forLoop;
 
 import java.util.Scanner;
