@@ -3,8 +3,7 @@
  * 
  * To input n numbers and find the HCF of the numbers. 
  * This class uses some advanced libraries in java.util and also uses a while 
- * loop to get input. It works nicely for now but I am still thinking of a 
- * better, more efficient algorithm
+ * loop to get input. Works brilliantly and efficiently now.
  */
 
 package com.sensei.java.forLoop.hard;
@@ -48,6 +47,10 @@ public class ForHCF {
 		for( int index=0; index<primes.size(); ) {
 			int divisor = primes.get(index);
 			
+			if( Collections.max( inputs ) < divisor ) {
+				break;
+			}
+			
 			boolean flag = true;
 			for( int i=0; i<inputs.size(); i++ ) {
 				
@@ -67,7 +70,7 @@ public class ForHCF {
 			else {
 				index++;
 			}
-			
+
 		}
 		return hcf;
 	}
