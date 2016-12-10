@@ -51,7 +51,7 @@ public class ForExercise10 {
 			numDigits = 2*numRows-1;
 		}
 		
-		for( int i=0; i<numRows*2-1; i++ ) {
+		for( int i=0; i<numDigits; i++ ) {
 			numColumns++;
 		}
 		
